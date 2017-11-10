@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-obd2-elm327" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>obd2-elm327</name>
+    <js-module name="obd2-elm327" src="www/obd2-elm327.js">
+        <clobbers target="cordova.plugins.obd2-elm327" />
+    </js-module>
+</plugin>
