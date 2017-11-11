@@ -1,7 +1,2 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-obd2-elm327" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>obd2-elm327</name>
-    <js-module name="obd2-elm327" src="www/obd2-elm327.js">
-        <clobbers target="cordova.plugins.obd2-elm327" />
-    </js-module>
-</plugin>
+<plugin id="cordova-plugin-obd2-elm327" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"><name>obd2-elm327</name><js-module name="obd2-elm327" src="www/obd2-elm327.js"><clobbers target="cordova.plugins.obd2-elm327" /></js-module><platform name="android"><config-file parent="/*" target="res/xml/config.xml"><feature name="obd2-elm327"><param name="android-package" value="cordova-plugin-obd2-elm327.obd2-elm327" /></feature></config-file><config-file parent="/*" target="AndroidManifest.xml" /><source-file src="src/android/obd2-elm327.java" target-dir="src/cordova-plugin-obd2-elm327/obd2-elm327" /></platform><platform name="ios"><config-file parent="/*" target="config.xml"><feature name="obd2-elm327"><param name="ios-package" value="obd2-elm327" /></feature></config-file><source-file src="src/ios/obd2-elm327.m" /></platform></plugin>
