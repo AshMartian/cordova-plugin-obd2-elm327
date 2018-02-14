@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-obd2-elm327",
+  "version": "1.0.0",
+  "description": "Connect to Wifi/Bluetooth Serial/Bluetooth LE OBD devices with javascript interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run eslint"
+  },
+  "cordova": {
+    "id": "cordova-plugin-obd2-elm327",
+    "platforms": [
+      "android",
+      "browser",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blandman/cordova-plugin-obd2-elm327.git"
+  },
+  "keywords": [
+    "OBD",
+    "cordova",
+    "bluetooth",
+    "le",
+    "wifi"
+  ],
+  "author": "Brandon Martin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blandman/cordova-plugin-obd2-elm327/issues"
+  },
+  "homepage": "https://github.com/blandman/cordova-plugin-obd2-elm327#readme"
+}
