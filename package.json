@@ -1,10 +1,18 @@
 {
-  "name": "obd2-elm327",
+  "name": "cordova-plugin-obd2-elm327",
   "version": "1.0.0",
-  "description": "Connect to Wifi and Bluetooth Serial-BLE OBD devices",
+  "description": "Connect to Wifi/Bluetooth Serial/Bluetooth LE OBD devices with javascript interface",
   "main": "www/obd2elm327.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run eslint"
+  },
+  "cordova": {
+    "id": "cordova-plugin-obd2-elm327",
+    "platforms": [
+      "android",
+      "browser",
+      "ios"
+    ]
   },
   "repository": {
     "type": "git",
@@ -12,9 +20,10 @@
   },
   "keywords": [
     "OBD",
-    "ELM",
-    "Cordova",
-    "Plugin"
+    "cordova",
+    "bluetooth",
+    "le",
+    "wifi"
   ],
   "author": "Brandon Martin",
   "license": "MIT",
