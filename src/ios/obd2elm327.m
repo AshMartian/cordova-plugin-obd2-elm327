@@ -1,15 +1,15 @@
-/********* obd2-elm327.m Cordova Plugin Implementation *******/
+/********* obd2elm327.m Cordova Plugin Implementation *******/
 
 #import <Cordova/CDV.h>
 
-@interface obd2-elm327 : CDVPlugin {
+@interface obd2elm327 : CDVPlugin {
   // Member variables go here.
 }
 
 - (void)coolMethod:(CDVInvokedUrlCommand*)command;
 @end
 
-@implementation obd2-elm327
+@implementation obd2elm327
 
 - (void)coolMethod:(CDVInvokedUrlCommand*)command
 {
