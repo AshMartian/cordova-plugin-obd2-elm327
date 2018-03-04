@@ -1,4 +1,4 @@
-package cordova-plugin-obd2-elm327;
+package cordovapluginobd2elm327;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -10,7 +10,7 @@ import org.json.JSONObject;
 /**
  * This class echoes a string called from JavaScript.
  */
-public class obd2-elm327 extends CordovaPlugin {
+public class obd2elm327 extends CordovaPlugin {
 
     /**
      * Actions

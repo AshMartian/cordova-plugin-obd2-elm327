@@ -10,7 +10,7 @@
 
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="obd2elm327">
-                <param name="android-package" value="cordova-plugin-obd2elm327.obd2elm327" />
+                <param name="android-package" value="cordovapluginobd2elm327.obd2elm327" />
             </feature>        
         </config-file>
         
