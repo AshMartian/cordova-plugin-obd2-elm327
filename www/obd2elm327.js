@@ -20,8 +20,8 @@ module.exports = {
      * @param {function} success 
      * @param {function} failure 
      */
-    setConfig: (configuration, success, failure) => {
-        cordova.exec(success, failure, "obd2-elm327", "setConfig", [configuration]);
+    setConfig: function(configuration, success, failure) {
+        cordova.exec(success, failure, "obd2elm327", "setConfig", [configuration]);
     },
 
         
@@ -32,8 +32,8 @@ module.exports = {
      * @param {function} failure - callback for failure to scan wifi/bluetooth
      * @returns {object}
      */
-    scanDevices: (success, failure) => {
-        cordova.exec(success, failure, "obd2-elm327", "scanDevices", []);
+    scanDevices: function(success, failure) {
+        cordova.exec(success, failure, "obd2elm327", "scanDevices", []);
     },
 
 
@@ -44,8 +44,8 @@ module.exports = {
      * @param {function} success - Callback for successful connection
      * @param {function} failure - Callback for failed connection
      */
-    connectDevice: (device, success, failure) => {
-        cordova.exec(success, failure, "obd2-elm327", "connectDevice", [device]);
+    connectDevice: function(device, success, failure) {
+        cordova.exec(success, failure, "obd2elm327", "connectDevice", [device]);
     },
 
 
@@ -55,8 +55,8 @@ module.exports = {
      * @param {function} success - Called when connection is successful
      * @param {function} failure - Called when disconnected
      */
-    subscribeConnected: (success, failure) => {
-        cordova.exec(success, failure, "obd2-elm327", "subscribeConnected", []);
+    subscribeConnected: function(success, failure) {
+        cordova.exec(success, failure, "obd2elm327", "subscribeConnected", []);
     },
 
 
@@ -67,7 +67,7 @@ module.exports = {
      * @param {function} success - Callback for successful write
      * @param {function} failure - Callback for failed write (not connected)
      */
-    write: (data, success, failure) => {
+    write: function(data, success, failure) {
 
         // convert to ArrayBuffer
         if (typeof data === 'string') {
@@ -78,7 +78,7 @@ module.exports = {
         } else if (data instanceof Uint8Array) {
             data = data.buffer;
         }
-        cordova.exec(success, failure, "obd2-elm327", "write", [data]);
+        cordova.exec(success, failure, "obd2elm327", "write", [data]);
     },
 
 
@@ -89,8 +89,8 @@ module.exports = {
      * @param {function} success - Called for succesful subscribe
      * @param {function} failure - Called for failed subscribe
      */
-    subscribe: (delimiter, success, failure) => {
-        cordova.exec(success, failure, "obd2-elm327", "subscribe", [delimiter]);
+    subscribe: function(delimiter, success, failure) {
+        cordova.exec(success, failure, "obd2elm327", "subscribe", [delimiter]);
     },
 
 
@@ -100,8 +100,8 @@ module.exports = {
      * @param {any} success - Called for successful subscription
      * @param {any} failure - Called for failed unsubscription (if not currently subscribed)
      */
-    unsubscribe: (success, failure) => {
-        cordova.exec(success, failure, "obd2-elm327", "unsubscribe", []);
+    unsubscribe: function(success, failure) {
+        cordova.exec(success, failure, "obd2elm327", "unsubscribe", []);
     },
 
 
