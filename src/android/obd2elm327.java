@@ -47,8 +47,8 @@ public class obd2elm327 extends CordovaPlugin {
     private static final String SUBSCRIBE = "subscribe";
     private static final String UNSUBSCRIBE = "unsubscribe";
 
-    private static mBTController BluetoothController;
-    private static mBLEController BluetoothLEController;
+    private static BluetoothController mBTController;
+    private static BluetoothLEController mBLEController;
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
