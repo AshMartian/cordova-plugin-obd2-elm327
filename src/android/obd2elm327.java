@@ -27,7 +27,11 @@ import org.apache.cordova.CallbackContext;
 import org.apache.cordova.PluginResult;
 import org.apache.cordova.LOG;
 
-import co.lujun.lmbluetoothsdk;
+import co.lujun.lmbluetoothsdk.BluetoothController;
+import co.lujun.lmbluetoothsdk.base.BluetoothListener;
+import co.lujun.lmbluetoothsdk.base.State;
+import co.lujun.lmbluetoothsdk.BluetoothLEController;
+import co.lujun.lmbluetoothsdk.base.BluetoothLEListener;
 
 import java.util.Set;
 
