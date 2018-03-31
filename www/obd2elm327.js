@@ -24,6 +24,10 @@ module.exports = {
         cordova.exec(success, failure, "obd2elm327", "setConfig", [configuration]);
     },
 
+    listDevices: function(configuration, success, failure) {
+        cordova.exec(success, failure, "obd2elm327", "listDevices", [configuration]);
+    },
+
         
     /**
      * Scan for nearby or available devices
