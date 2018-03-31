@@ -27,6 +27,7 @@ import org.apache.cordova.CallbackContext;
 import org.apache.cordova.PluginResult;
 import org.apache.cordova.LOG;
 
+import co.lujun.lmbluetoothsdk;
 
 import java.util.Set;
 
@@ -45,6 +46,11 @@ public class obd2elm327 extends CordovaPlugin {
     private static final String WRITE = "write";
     private static final String SUBSCRIBE = "subscribe";
     private static final String UNSUBSCRIBE = "unsubscribe";
+
+    private BluetoothController mBTController = BluetoothController.getInstance().build(Context context);
+    
+    private BluetoothLEController mBLEController = BluetoothLEController.getInstance().build(Context context);
+
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
