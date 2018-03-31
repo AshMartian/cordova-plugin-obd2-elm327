@@ -47,14 +47,11 @@ public class obd2elm327 extends CordovaPlugin {
     private static final String SUBSCRIBE = "subscribe";
     private static final String UNSUBSCRIBE = "unsubscribe";
 
-    
+    private static mBTController BluetoothController;
+    private static mBLEController BluetoothLEController;
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        Context context=this.cordova.getActivity().getApplicationContext(); 
-        BluetoothController mBTController = BluetoothController.getInstance().build(context);
-    
-        BluetoothLEController mBLEController = BluetoothLEController.getInstance().build(context);
 
 
         if (action.equals(SETCONFIG)) {
@@ -90,6 +87,11 @@ public class obd2elm327 extends CordovaPlugin {
     }
 
     private void setConfig(String message, CallbackContext callbackContext) {
+        Context context=this.cordova.getActivity().getApplicationContext(); 
+        mBTController = BluetoothController.getInstance().build(context);
+    
+        mBLEController = BluetoothLEController.getInstance().build(context);
+
         if (message != null && message.length() > 0) {
             callbackContext.success(message);
         } else {
