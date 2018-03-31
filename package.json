@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-obd2-elm327",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Connect to Wifi/Bluetooth Serial/Bluetooth LE OBD devices with javascript interface",
   "main": "www/obd2elm327.js",
   "scripts": {
