@@ -2,7 +2,7 @@
 <plugin id="cordova-plugin-obd2elm327" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>obd2elm327</name>
     <js-module name="obd2elm327" src="www/obd2elm327.js">
-        <clobbers target="cordova.plugins.obd2elm327" />
+        <clobbers target="window.obd2elm327" />
     </js-module>
     
     <platform name="android">
