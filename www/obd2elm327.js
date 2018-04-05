@@ -24,8 +24,8 @@ module.exports = {
         cordova.exec(success, failure, "obd2elm327", "setConfig", [configuration]);
     },
 
-    listDevices: function(configuration, success, failure) {
-        cordova.exec(success, failure, "obd2elm327", "listDevices", [configuration]);
+    listDevices: function(success, failure) {
+        cordova.exec(success, failure, "obd2elm327", "listDevices");
     },
 
         
@@ -52,6 +52,15 @@ module.exports = {
         cordova.exec(success, failure, "obd2elm327", "connectDevice", [device]);
     },
 
+    /**
+     * Get connection status
+     * 
+     * @param {function} success - Called when connection is successful
+     * @param {function} failure - Called when disconnected
+     */
+    isConnected: function(success, failure) {
+        cordova.exec(success, failure, "obd2elm327", "isConnected", []);
+    },
 
     /**
      * Subscribe to the connection status
